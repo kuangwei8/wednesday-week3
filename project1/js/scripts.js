@@ -7,12 +7,12 @@ $(document).ready(function(){
     event.preventDefault();
     $("#result").text(" ");
     var userInput = $("input#normal").val().split(" ");
-    for (var i = 0; i <= userInput.length; i++){
+    for (var i = 0; i < userInput.length; i++){
 
       if (vowels.includes(userInput[i].split('')[0])){
         console.log(userInput[i]);
       $('#result').append(userInput[i] + 'way'+' ')
-      }
+    } else
       if (consonants.includes(userInput[i].split('')[0]) && !vowels.includes(userInput[i].split('')[0])) {
         console.log(userInput[i]);
       if (userInput[i].charAt(0)=== "q" && userInput[i].charAt(1)=== "u" ) {
